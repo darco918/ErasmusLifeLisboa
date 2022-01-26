@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="logoSize">85dp</dimen>
+    <dimen name="marginExercisesStatistics">25dp</dimen>
+    <dimen name="marginButtonsFromCollection">20dp</dimen>
+    <dimen name="marginStartIconCardView">10dp</dimen>
+</resources>

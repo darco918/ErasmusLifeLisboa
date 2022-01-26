@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1870B9</color>
+    <color name="colorPrimaryDark">#1870B9</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="ellBlue">#1870B9</color>
+    <color name="containerBackground">#FAFAFA</color>
+    <color name="activityBackground"> #fff</color>
+    <color name="lightGreyText">#494949</color>
+    <color name="unselectedText">#7D7D7D</color>
+</resources>

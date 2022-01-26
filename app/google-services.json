@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "830803781882",
+    "project_id": "erasmus-life-lisboa",
+    "storage_bucket": "erasmus-life-lisboa.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830803781882:android:ae64a05e257cf4aad94143",
+        "android_client_info": {
+          "package_name": "com.example.easmuslifeapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "830803781882-iba48p7bhg16chaaeg3kbopo6ssucu4m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPiisqxgBYVawaes8YpUrveChsLLEPPqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "830803781882-iba48p7bhg16chaaeg3kbopo6ssucu4m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:830803781882:android:e7c2e0696b827880d94143",
+        "android_client_info": {
+          "package_name": "com.example.myapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "830803781882-iba48p7bhg16chaaeg3kbopo6ssucu4m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDPiisqxgBYVawaes8YpUrveChsLLEPPqw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "830803781882-iba48p7bhg16chaaeg3kbopo6ssucu4m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
