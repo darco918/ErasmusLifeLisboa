@@ -19,7 +19,6 @@ class MainActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
 
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -87,7 +86,6 @@ class MainActivity : AppCompatActivity() {
             Log.d(TAG, findViewById<EditText>(R.id.editTextPasswordSignUp).text.toString())
             Log.d(TAG, findViewById<EditText>(R.id.editTextPasswordSignUp2).text.toString())
 
-
             Toast.makeText(
                 baseContext, "Passwords do not match",
                 Toast.LENGTH_SHORT
@@ -117,7 +115,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun updateUI(user: FirebaseUser?) {
-        startActivity(Intent(this, MainActivity2::class.java))
+        startActivity(Intent(this,UserDataActivity::class.java))
     }
 
 //    public override fun onStart() {
