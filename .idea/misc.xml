@@ -6,11 +6,15 @@
         <entry key="..\:/Users/murja/Desktop/ErasmusLifeAPP/app/src/main/res/drawable/button_blue_round.xml" value="0.16822916666666668" />
         <entry key="..\:/Users/murja/Desktop/ErasmusLifeAPP/app/src/main/res/drawable/container.xml" value="0.14537037037037037" />
         <entry key="..\:/Users/murja/Desktop/ErasmusLifeAPP/app/src/main/res/drawable/dialog_wait.xml" value="0.15833333333333333" />
+        <entry key="..\:/Users/murja/Desktop/ErasmusLifeAPP/app/src/main/res/drawable/ic_user_icon.xml" value="0.14537037037037037" />
         <entry key="..\:/Users/murja/Desktop/ErasmusLifeAPP/app/src/main/res/layout/activity_main.xml" value="0.13333333333333333" />
         <entry key="..\:/Users/murja/Desktop/ErasmusLifeAPP/app/src/main/res/layout/activity_main2.xml" value="0.1" />
         <entry key="..\:/Users/murja/Desktop/ErasmusLifeAPP/app/src/main/res/layout/activity_profile.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/murja/Desktop/ErasmusLifeAPP/app/src/main/res/layout/activity_user_data.xml" value="0.14791666666666667" />
         <entry key="..\:/Users/murja/Desktop/ErasmusLifeAPP/app/src/main/res/layout/dialog_wait.xml" value="0.14673913043478262" />
+        <entry key="..\:/Users/murja/Desktop/ErasmusLifeAPP/app/src/main/res/layout/fragment_events.xml" value="0.12907608695652173" />
+        <entry key="..\:/Users/murja/Desktop/ErasmusLifeAPP/app/src/main/res/layout/fragment_profile.xml" value="0.12907608695652173" />
+        <entry key="..\:/Users/murja/Desktop/ErasmusLifeAPP/app/src/main/res/menu/menu_bottom.xml" value="0.16197916666666667" />
       </map>
     </option>
   </component>

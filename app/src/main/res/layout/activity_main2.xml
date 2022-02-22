@@ -7,4 +7,23 @@
     android:background="#f23f"
     tools:context=".MainActivity2">
 
+    <LinearLayout
+        android:id="@+id/linear_layout_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/menu_bottom"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.ismaeldivita.chipnavigation.ChipNavigationBar
+        android:id="@+id/menu_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/bottomNavigationBackground"
+        android:elevation="10dp"
+        android:gravity="center"
+        app:cnb_menuResource="@menu/menu_bottom"
+        app:cnb_textColor="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

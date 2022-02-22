@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.Window
 import android.widget.Toast
 import com.example.easmuslifeapp.databinding.ActivityUserDataBinding
+import com.example.easmuslifeapp.datamodels.User
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DatabaseReference
 import com.google.firebase.database.FirebaseDatabase
