@@ -25,7 +25,8 @@ class MainActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         findViewById<Button>(R.id.signInButton).setOnClickListener {
-            startActivity(Intent(this, MainActivity2::class.java))
+            //startActivity(Intent(this, MainActivity2::class.java))
+            startActivity(Intent(this, AdminScannerActivity::class.java))
 //            signInMethod(
 //                findViewById<TextView>(R.id.editTextEmail),
 //                findViewById<TextView>(R.id.editTextPassword)

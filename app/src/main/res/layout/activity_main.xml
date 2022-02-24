@@ -71,11 +71,10 @@
                 android:autofillHints="Email"
                 android:background="@drawable/edit_text_signin"
                 android:inputType="text"
-                android:text="@string/username"
+                android:hint="@string/username"
                 android:textColor="@color/lightGreyText"
                 android:textSize="15sp"
-                app:layout_constraintTop_toTopOf="parent"
-                tools:ignore="LabelFor" />
+                app:layout_constraintTop_toTopOf="parent" />
 
             <EditText
                 android:id="@+id/editTextPassword"
@@ -86,7 +85,7 @@
                 android:autofillHints="Email"
                 android:background="@drawable/edit_text_signin"
                 android:inputType="text"
-                android:text="@string/password"
+                android:hint="@string/password"
                 android:textColor="@color/lightGreyText"
                 android:textSize="15sp"
                 app:layout_constraintTop_toBottomOf="@id/editTextEmail"

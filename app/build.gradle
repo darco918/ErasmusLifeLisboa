@@ -58,4 +58,5 @@ dependencies {
     implementation 'androidmads.library.qrgenearator:QRGenearator:1.0.3'
     implementation 'com.google.zxing:core:3.4.1'
     implementation('com.ismaeldivita.chipnavigation:chip-navigation-bar:1.2.0')
+    implementation "com.journeyapps:zxing-android-embedded:3.6.0"
 }
