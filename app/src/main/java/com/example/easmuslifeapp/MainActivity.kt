@@ -14,7 +14,6 @@ import androidx.constraintlayout.widget.ConstraintLayout
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
 
-
 class MainActivity : AppCompatActivity() {
 
     private lateinit var auth: FirebaseAuth
@@ -25,12 +24,10 @@ class MainActivity : AppCompatActivity() {
         auth = FirebaseAuth.getInstance()
 
         findViewById<Button>(R.id.signInButton).setOnClickListener {
-            //startActivity(Intent(this, MainActivity2::class.java))
-            startActivity(Intent(this, AdminScannerActivity::class.java))
-//            signInMethod(
-//                findViewById<TextView>(R.id.editTextEmail),
-//                findViewById<TextView>(R.id.editTextPassword)
-//            )
+            signInMethod(
+                findViewById<TextView>(R.id.editTextEmail),
+                findViewById<TextView>(R.id.editTextPassword)
+            )
         }
 
         findViewById<TextView>(R.id.signUp).setOnClickListener {
@@ -52,34 +49,36 @@ class MainActivity : AppCompatActivity() {
                     findViewById<TextView>(R.id.editTextPassword)
                 )
             }
-
         }
-
     }
 
     private fun signInMethod(email: TextView, password: TextView) {
-        auth.signInWithEmailAndPassword(email.text.toString(), password.text.toString())
-            .addOnCompleteListener(this) { task ->
-                if (task.isSuccessful) {
-                    // Sign in success, update UI with the signed-in user's information
-                    Log.d(TAG, "signInWithEmail:success")
-                    val user = auth.currentUser
-                    updateUI(user)
-                } else {
-                    // If sign in fails, display a message to the user.
-                    Log.w(TAG, "signInWithEmail:failure", task.exception)
-                    Toast.makeText(
-                        baseContext, "Authentication failed.",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                    updateUI(null)
+
+        if (email.text.toString() == "ADMIN" && password.text.toString() == "ADMINDARCO")
+            startActivity(Intent(this, AdminMenuActivity::class.java))
+        else {
+            auth.signInWithEmailAndPassword(email.text.toString(), password.text.toString())
+                .addOnCompleteListener(this) { task ->
+                    if (task.isSuccessful) {
+                        // Sign in success, update UI with the signed-in user's information
+                        Log.d(TAG, "signInWithEmail:success")
+                        val user = auth.currentUser
+                        updateUI(user)
+                    } else {
+                        // If sign in fails, display a message to the user.
+                        Log.w(TAG, "signInWithEmail:failure", task.exception)
+                        Toast.makeText(
+                            baseContext, "Authentication failed.",
+                            Toast.LENGTH_SHORT
+                        ).show()
+                        updateUI(null)
+                    }
                 }
-            }
+        }
     }
 
     private fun signUpMethod() {
         // Initialize Firebase Auth
-
         if (findViewById<EditText>(R.id.editTextPasswordSignUp).text.toString() != findViewById<EditText>(
                 R.id.editTextPasswordSignUp2
             ).text.toString()
@@ -117,7 +116,8 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun updateUI(user: FirebaseUser?) {
-        startActivity(Intent(this,UserDataActivity::class.java))
+        startActivity(Intent(this, UserDataActivity::class.java))
+        //startActivity(Intent(this, MainActivity2::class.java))
     }
 
 //    public override fun onStart() {

@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EasmusLifeAPP">
         <activity
+            android:name=".ListOfUsersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminMenuActivity"
+            android:exported="false" />
+        <activity
             android:name=".UserProfileActivity"
             android:exported="false" />
         <activity

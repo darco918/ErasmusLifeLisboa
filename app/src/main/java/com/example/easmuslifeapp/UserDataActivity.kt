@@ -1,6 +1,7 @@
 package com.example.easmuslifeapp
 
 import android.app.Dialog
+import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -31,22 +32,22 @@ class UserDataActivity : AppCompatActivity() {
         val uid = auth.currentUser?.uid
         dataBaseReference = FirebaseDatabase.getInstance().getReference("Users")
         binding.saveBtn.setOnClickListener {
-
-            showProgressBar()
-            val firstName = binding.etFirstName.text.toString()
-            val lastName = binding.etLastName.text.toString()
-            dataBaseReference.child("Darco").setValue("1")
-            val user = User(firstName, lastName)
-            if (uid != null) {
-                dataBaseReference.child(uid).setValue(user).addOnCompleteListener {
-                    if (it.isSuccessful) {
-                        uploadProfilePicture()
-                    } else {
-                        hideProgressBar()
-                        Toast.makeText(this, "Failed to update Profile", Toast.LENGTH_LONG).show()
-                    }
-                }
-            }
+            startActivity(Intent(this, MainActivity2::class.java))
+//            showProgressBar()
+//            val firstName = binding.etFirstName.text.toString()
+//            val lastName = binding.etLastName.text.toString()
+//            dataBaseReference.child("Darco").setValue("1")
+//            val user = User(firstName, lastName)
+//            if (uid != null) {
+//                dataBaseReference.child(uid).setValue(user).addOnCompleteListener {
+//                    if (it.isSuccessful) {
+//                        uploadProfilePicture()
+//                    } else {
+//                        hideProgressBar()
+//                        Toast.makeText(this, "Failed to update Profile", Toast.LENGTH_LONG).show()
+//                    }
+//                }
+//            }
         }
     }
 
