@@ -54,8 +54,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun signInMethod(email: TextView, password: TextView) {
-
-        if (email.text.toString() == "ADMIN" && password.text.toString() == "ADMINDARCO")
+        if (email.text.toString() == "darco" && password.text.toString() == "darco")
             startActivity(Intent(this, AdminMenuActivity::class.java))
         else {
             auth.signInWithEmailAndPassword(email.text.toString(), password.text.toString())
@@ -72,7 +71,6 @@ class MainActivity : AppCompatActivity() {
                             baseContext, "Authentication failed.",
                             Toast.LENGTH_SHORT
                         ).show()
-                        updateUI(null)
                     }
                 }
         }
